@@ -17,11 +17,11 @@ function secondPlayer(guessNumber) {
         break;
     }
     else if (mid < guessNumber) {
-        console.log(`Компьютер 2: Пробую число ${mid}? \nКомпьютер 1: Больше!`)
+        console.log(`Компьютер 2: Пробую число ${mid}? \nКомпьютер 1: Больше!`);
         low = mid + 1;
     }
     else {
-        console.log(`Компьютер 2: Пробую число ${mid}? \nКомпьютер 1: Меньше!`)
+        console.log(`Компьютер 2: Пробую число ${mid}? \nКомпьютер 1: Меньше!`);
         high = mid - 1;
     }
   }
@@ -29,4 +29,4 @@ function secondPlayer(guessNumber) {
 }
 
 const guessNumber = firstPlayer();
-secondPlayer(guessNumber)
+secondPlayer(guessNumber);
